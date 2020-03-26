@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.mainGridContainer {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+}
+
+div {
+  animation: default 3s infinite;
+}
+
+p {
+  margin: 0;
+  color: yellow;
+  background-color: black;
+  font-size: 32pt;
+}
+
+p:hover {
+  color: yellow;
+}
+
+.item-9x2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column-end: span 9;
+  grid-row-end: span 2;
+}
+
+.joei {
+  animation: joei 3s infinite;
+}
+
+@keyframes default {
+  0% {background-color: black;}
+  49% {background-color: black;}
+  50% {background-color: green;}
+  99% {background-color: green;}
+  100% {background-color: black;}
+}
+
+@keyframes joei {
+  0% {background-color: green;}
+  49% {background-color: green;}
+  50% {background-color: black;}
+  99% {background-color: black;}
+  100% {background-color: green;}
+}
